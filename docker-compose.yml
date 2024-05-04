@@ -14,8 +14,8 @@ services:
       - "8080:80"
     environment:
       - APACHE_DOCUMENT_ROOT=/var/www/html/public
-    depends_on:
-      - mysql
+    #depends_on:
+    #  - mysql
     networks:
       - local-bridge
 

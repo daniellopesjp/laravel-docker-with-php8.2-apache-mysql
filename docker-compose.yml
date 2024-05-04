@@ -3,6 +3,7 @@ version: '3.8'
 services:
   # Laravel Application
   app:
+    image: laravel-unipe:1.0
     #build:
       #context: ./laravel
       #dockerfile: Dockerfile

@@ -43,6 +43,9 @@ RUN composer install --no-interaction --optimize-autoloader
 # Set permissions for Laravel.
 RUN chown -R www-data:www-data storage bootstrap/cache
 
+# Instalar a extensão PDO MySQL
+RUN docker-php-ext-install pdo pdo_mysql
+
 # Expose port 80 for Apache.
 EXPOSE 80
 
